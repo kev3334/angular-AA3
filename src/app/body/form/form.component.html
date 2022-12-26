@@ -1,0 +1,14 @@
+<h1>{{titulo}}</h1>
+<div id="itexto">
+    <input type="text" #nombrec>
+    <button (click)="addCurso(nombrec.value)">Add</button>
+</div>
+<br>
+<div id="lista">
+    <ul>
+        <div *ngFor="let nom of cursos" >
+            <li>{{nom}}</li>
+        </div>
+    </ul>
+</div>
+
